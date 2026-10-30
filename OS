@@ -1,0 +1,57 @@
+Possible attack surface : BIOS attack (antivirus cant detect a malware inside BIOS)
+
+BIOS => UEFI (more  security system)
+
+Linux :
+  user : multi-user
+ architecture : apps or systems => distributed through package managers(rpm,deb,dnf)
+ shell : command line interpreter (CLI)
+ package manager tools: apt,yum
+ filesystem : FHS
+
+ Apps in Kali Linux:
+  - Metasploit
+  - Burpsuite
+  - John The Ripper
+  - tcpdump/Wireshark
+  - Autopsy
+
+Bash : 
+  - echo : like print()
+  - expr : for basic calculation
+
+Basic commands:
+ - pwd = current directory
+ - ls = list of directory
+ - cd =  change directory
+ - cat = read file
+ - head = only display 10 lines in cat commands
+ - tail = opposite of head
+ - touch = create a .txt file
+ - grep = search for something 
+ - less = open a file by pages
+ - |  = runs two commands at the same time
+ - find = search files and directory that have specific criteria
+ - -name = along with find to find specific files/directory
+ - -iname = same as name but not case sensitive
+ - mtime = last time frame modified
+ - mv =move files
+ - touch = create files
+ - nano = open a file 
+
+
+FSH :
+ - /home: Each user in the system gets their own home directory.
+- /bin: This directory stands for “binary” and contains binary files and other executables. Executables are files that contain a series of commands a computer needs to follow to run programs and perform other functions.
+- /etc: This directory stores the system’s configuration files.
+- /tmp: This directory stores many temporary files. The /tmp directory is commonly used by attackers because anyone in the system can modify data in these files.
+- /mnt: This directory stands for “mount” and stores media, such as USB drives and hard drives.
+
+  try : man hier
+
+Ownership:
+ "Type : User, Group, Other"
+ w = write
+ x = execute
+ r = read
+
