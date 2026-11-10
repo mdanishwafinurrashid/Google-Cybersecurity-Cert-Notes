@@ -1,0 +1,34 @@
+COMMON COMMANDS
+	-SELECT FROM
+	-ORDER BY(DESC,ASC)
+	 -WHERE 
+	 -LIKE = used with WHERE to search for column pattern along with wildcards; find something LIKE this
+	 -wildcards (% = any number of characters,  _ = only one character)
+	 -DESCRIBE = display the structure of a table in a database.
+
+
+Example Command:
+SELECT id_employees,  name, salary
+FROM Employee
+ORDER BY salary
+WHERE name LIKE '_A%';
+
+
+JOIN TABLE
+- tablename.keyname
+- type of join : inner join (​returns rows matching on ​a specified column that exists in more than one table like AND)
+- outer join :
+	- left join : returns the 1st table + matching specified column on 2nd table
+	- right join : returns the 2nd table + matching specified column on 1st table
+	- full outer join : return all columns
+
+example command:
+	SELECT username, device_id, operating_system
+	 FROM machines
+	 INNER JOIN employees ON machines.device_id = machines.device_id;
+
+!!IMPORTANT NOTES : semicolon(;) are put at the end of the commands not each line!!
+
+
+Database example:
+- chinook
