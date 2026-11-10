@@ -55,3 +55,35 @@ Ownership:
  x = execute
  r = read
 
+Options: Change the behavior of a file(aftrer ls command)
+  - -l = display file permissions
+  - -a = display hidden files
+  - -la = combination of -l and -a
+
+chmod : change permission of a file and directory
+- example command : chmod g+x,o-r note.txt
+	- g+x = grant permission for group to execute file
+	- o-r = disallow permission for other to read file
+	- note : dont put space after comma
+chown : change ownership of a file or directory
+
+add,delete modify user:
+- only superuser or root can add/delete user
+- useradd = add user
+	- -g: Sets the user’s default/primary group
+	- -G: Adds the user to additional groups
+- userdel
+- usermod = to modify existing user status
+	 -d: Changes the user’s home directory.
+    - -l: Changes the user’s login name.
+    - -L: Locks the account so the user can’t log in.
+    - -a : add user to additional group without removing current group
+    - -g and -G
+    
+
+useful commands:
+	 man : short for manual
+	 whatis : give description of another command in just one line(no need chatgpt anymore!)
+	 apropos : use for searching specific strings(for linux commands)
+
+
